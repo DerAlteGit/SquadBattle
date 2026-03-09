@@ -6,6 +6,7 @@ public class EntryPoint : MonoBehaviour
     [SerializeField]private CardSetter cardSetter;
     [SerializeField]private BattleInitializer battleInitializer;
     [SerializeField] private UITrigger uiTriger;
+    [SerializeField]
 
     private void InitGrid()
     {
@@ -33,6 +34,7 @@ public class EntryPoint : MonoBehaviour
     {
         uiTriger.ActivateBattleUI();
         battleInitializer.Init();
+        
 
     }
 }

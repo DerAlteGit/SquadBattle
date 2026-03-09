@@ -11,10 +11,14 @@ public class PathFindTester : IAnchorField
     private float step;
     private Anchor anchorPref;
     private Anchor[,] anchors;
-    private PathBuilder<BasePath> builder;
-    public PathFindTester()
+    //private PathBuilder<BasePath> builder;
+    public PathFindTester(int rowCount, int columnCount,float step, Vector2 leftUp, Anchor anchorPref)
     {
-        
+        this.rowCount = rowCount;
+        this.columnCount = columnCount;
+        this.step = step;
+        this.leftUp = leftUp;
+        this.anchorPref = anchorPref;
     }
     public void Instance()
     {
@@ -92,8 +96,5 @@ public class PathFindTester : IAnchorField
 
 
     }
-   
-
-    
 
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Anchor : MonoBehaviour
 {
-    [SerializeField]private bool isObstacle;
+    //[SerializeField]private bool isObstacle;
 
 
     [SerializeField]private  Anchor leftAnchor;

@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71b6d0f88ddfb6b409f0f15b8825294b, type: 3}
-  m_Name: Testtemplate
+  m_Name: Wizard
   m_EditorClassIdentifier: 
-  _name: 111
+  _name: 
   _description: 
-  id: 1
-  _health: 1
-  _speed: 1
-  _damage: 1
-  _attackSpeed: 1
-  _cost: 1
-  sprite: {fileID: 8886490851947454144, guid: 922ab66e5fd0d1a4eba1b354601e1904, type: 3}
-  _attackDistance: 1
+  id: 0
+  _health: 0
+  _speed: 0
+  _damage: 0
+  _attackSpeed: 0
+  _cost: 0
+  sprite: {fileID: 2383712454611094887, guid: c73971f1a36eec147a9165be79dd53e1, type: 3}
+  _attackDistance: 0
