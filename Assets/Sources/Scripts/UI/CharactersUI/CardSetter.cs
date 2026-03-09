@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CardSetter : MonoBehaviour
 {
-    [SerializeField]private List<Character> characters;
+    [SerializeField]private List<CharacterTemplate> characters;
     [SerializeField] private CharacterSet setter;
     [SerializeField]private CharacterCard cardPref;
     [SerializeField] private GameObject cardContainer;
@@ -20,7 +20,7 @@ public class CardSetter : MonoBehaviour
 
     public void Init()
     {
-        foreach (Character item in characters)
+        foreach (CharacterTemplate item in characters)
         {
             CharacterCard card = Instantiate(cardPref, cardContainer.transform);
             card.Init(item,setter);

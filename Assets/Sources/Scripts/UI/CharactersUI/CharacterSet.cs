@@ -3,13 +3,14 @@ using UnityEngine.EventSystems;
 
 public class CharacterSet : MonoBehaviour
 {
+    [SerializeField] private Character characterPrefab;
     [SerializeField] private SettingGrid grid;
-    private GameObject currentCharacter;
-    private GameObject currentCell;
+    private CharacterTemplate currentCharacter;
+    //private GameObject currentCell;
     [SerializeField]private LayerMask gridMask;
 
     [SerializeField] private SetInputConfig inputConfig;
-    public void SetCharacter(GameObject obj)
+    public void SetCharacter(CharacterTemplate obj)
     {
         Cancel();
         if(obj != null)
@@ -75,8 +76,8 @@ public class CharacterSet : MonoBehaviour
     {
         if (currentCharacter != null && !cell.IsFull)
         {
-            GameObject character = Instantiate(currentCharacter, cell.transform.position, Quaternion.identity);
-            cell.Insert(character);
+            Character character = new CharacterCreator(characterPrefab).CreateCharacter(currentCharacter, cell.transform.position);
+            cell.Insert(character.gameObject);
         }
     }
 }

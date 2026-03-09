@@ -1,22 +1,24 @@
 using UnityEngine;
 
-public class CharacterStats : MonoBehaviour
+public class CharacterStats
 {
 
     [SerializeField] private string _name;
 
-    [SerializeField] private int _health;
-    [SerializeField] private int _speed;
-    [SerializeField] private int _damage;
-    [SerializeField] private int _attackSpeed;
+    [SerializeField] public float Health { get; private set; }
+    [SerializeField] public float Speed { get; private set; }
+    [SerializeField] public float Damage { get; private set; }
+    [SerializeField] public float AttackSpeed { get; private set; }
+    [SerializeField] public float AttackDistance { get; private set; }
 
-    public void Init(Character character)
+    public CharacterStats(CharacterTemplate character)
     {
         _name = character.Name;
-        _health = character.Health;
-        _speed = character.Speed;
-        _damage = character.Damage;
-        _attackSpeed = character.AttackSpeed;
+        Health = character.Health;
+        Speed = character.Speed;
+        Damage = character.Damage;
+        AttackSpeed = character.AttackSpeed;
+        AttackDistance = character.AttackDistance;
     }
 
 }

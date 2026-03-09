@@ -1052,8 +1052,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characters:
-  - {fileID: 7108027282989752475, guid: 3bec98c4adc57304dbb231b2666099db, type: 3}
-  - {fileID: 6887381486740286258, guid: 0dd5cfd6929dd8f449666ca9750e36a8, type: 3}
+  - {fileID: 11400000, guid: 36ad8cf281ba4a04393a6bad38d480ff, type: 2}
+  - {fileID: 11400000, guid: 36ad8cf281ba4a04393a6bad38d480ff, type: 2}
   setter: {fileID: 1919197763}
   cardPref: {fileID: 5275949169482903465, guid: f6e1ee2ef61bd2046842ec282e8028ac, type: 3}
   cardContainer: {fileID: 1928263345}
@@ -12441,6 +12441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54c4dabc6ad5f9c4787e9c206786da97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterPrefab: {fileID: -8397872780041509738, guid: 3bec98c4adc57304dbb231b2666099db, type: 3}
   grid: {fileID: 1919197761}
   gridMask:
     serializedVersion: 2

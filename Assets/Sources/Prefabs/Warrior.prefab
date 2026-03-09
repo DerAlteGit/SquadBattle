@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7285935187075062621}
   - component: {fileID: 6086712816728609487}
-  - component: {fileID: 7108027282989752475}
+  - component: {fileID: -8397872780041509738}
   m_Layer: 0
   m_Name: Warrior
   m_TagString: Untagged
@@ -88,7 +88,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!114 &7108027282989752475
+--- !u!114 &-8397872780041509738
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,15 +97,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1598517439989017220}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71b6d0f88ddfb6b409f0f15b8825294b, type: 3}
+  m_Script: {fileID: 11500000, guid: 75b63ebc232da8942a00a1a43f5c2f12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Warrior
-  _description: Common medieval melee warrior
-  id: 0
-  _health: 20
-  _speed: 10
-  _damage: 15
-  _attackSpeed: 5
-  _cost: 50
-  sprite: {fileID: -5261828498749009828, guid: c73971f1a36eec147a9165be79dd53e1, type: 3}

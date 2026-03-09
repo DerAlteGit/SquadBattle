@@ -6,14 +6,14 @@ public class CharacterCard : MonoBehaviour
 {
     [SerializeField] private CharacterSet charSet; // Для передачи текущего персонажа в сеттер при нажатии
 
-    [SerializeField] private Character character;
+    [SerializeField] private CharacterTemplate character;
     [SerializeField] private Image characterSprite;
     [SerializeField] private TMP_Text characterName;
     [SerializeField] private TMP_Text maxHealth;
     [SerializeField] private TMP_Text damage;
     [SerializeField] private TMP_Text speed;
 
-    public void Init(Character character, CharacterSet setter)
+    public void Init(CharacterTemplate character, CharacterSet setter)
     {
         this.character = character;
         characterSprite.sprite = character.Sprite;
@@ -28,7 +28,7 @@ public class CharacterCard : MonoBehaviour
 
     public void OnCardClick()
     {
-        charSet.SetCharacter(character.gameObject);
+        charSet.SetCharacter(character);
     }
     
 }

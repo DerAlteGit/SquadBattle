@@ -1,6 +1,6 @@
 using UnityEngine;
-
-public class Character : MonoBehaviour
+[CreateAssetMenu(fileName = "New Character Template", menuName = "Character Template", order = 51)]
+public class CharacterTemplate : ScriptableObject
 {
     [SerializeField]private string _name;
     [SerializeField] private string _description;
@@ -12,7 +12,7 @@ public class Character : MonoBehaviour
     [SerializeField] private int _attackSpeed;
     [SerializeField] private int _cost;
     [SerializeField] private Sprite sprite;
-
+    [SerializeField] private float _attackDistance;
 
 
     public string Name { get => _name;}
@@ -23,5 +23,6 @@ public class Character : MonoBehaviour
     public int AttackSpeed { get => _attackSpeed; }
     public int Cost { get => _cost; }
     public Sprite Sprite { get => sprite; }
-    public int ID {  get => id; }   
+    public int ID {  get => id; } 
+    public float AttackDistance {  get => _attackDistance; }
 }

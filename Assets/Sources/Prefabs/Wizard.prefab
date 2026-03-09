@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5785502904954989991}
   - component: {fileID: 8441868150689324707}
-  - component: {fileID: 6887381486740286258}
+  - component: {fileID: 9002535846370115582}
   m_Layer: 0
   m_Name: Wizard
   m_TagString: Untagged
@@ -88,7 +88,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!114 &6887381486740286258
+--- !u!114 &9002535846370115582
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,15 +97,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 5404557019036712827}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71b6d0f88ddfb6b409f0f15b8825294b, type: 3}
+  m_Script: {fileID: 11500000, guid: 75b63ebc232da8942a00a1a43f5c2f12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Wizard
-  _description: Proffecional old warrior
-  id: 0
-  _health: 30
-  _speed: 10
-  _damage: 18
-  _attackSpeed: 7
-  _cost: 75
-  sprite: {fileID: 2383712454611094887, guid: c73971f1a36eec147a9165be79dd53e1, type: 3}
